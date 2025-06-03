@@ -6,3 +6,11 @@ const reader = new XMLHttpRequest();
             }
         };
         reader.send();
+
+const rozdzialy = 11;
+
+const nav = document.querySelector("nav");
+
+for(let i = 1; i <= rozdzialy; i++) {
+        nav.innerHTML+=`<a href="#${i}">Rozdział ${i} </a>`
+    }

@@ -135,3 +135,10 @@ i, b {
   font-style: italic;
   font-size: 0.95em;
 }
+
+nav {
+  max-width: 800px;
+  margin: 0 auto;
+  justify-content: center;
+
+}
