@@ -158,13 +158,15 @@ img {
 }
 
 #menuImage {
-  top: 13%;
+  top: 10%;
   right: 10px;
 }
 
 @media (max-width: 481px) {
   #menuImage {
-    top: 23%;
+    top: 25%;
+    width: 40px;
+    height: 40px;
   }
 }
 
