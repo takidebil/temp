@@ -5,6 +5,10 @@
   font-family: Poppins;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --UltraViolet: #1a1a1c;
   --RoseQuartz: #9a9399;
@@ -136,9 +140,42 @@ i, b {
   font-size: 0.95em;
 }
 
-nav {
+nav a {
   max-width: 800px;
+  font-size: 20px;
   margin: 0 auto;
   justify-content: center;
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
 
+img {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+#menuImage {
+  top: 13%;
+  right: 10px;
+}
+
+@media (max-width: 481px) {
+  #menuImage {
+    top: 23%;
+  }
+}
+
+img:hover, nav a:hover {
+  transform: scale(1.1, 1.1);
+}
+
+#topArrow {
+  bottom: 5%;
+  right: 5%;
+  display: none;
+  position: fixed;
+  opacity: 0.6;
 }
